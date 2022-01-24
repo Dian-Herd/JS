@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan JS Control FLow</title>
+</head>
+<body>
+    <h1>Hello World!</h1>
+
+    <script>
+        let nilai = true;
+        while(nilai){
+            nilai = parseInt(prompt("Input nilai diantara 0 sampai 100 :"));
+
+            if(nilai > 80 && nilai <= 100){
+                alert("Nilai A");
+            } else if(nilai > 70 && nilai <=80){
+                alert("Nilai B");
+            } else if(nilai >= 0 && nilai <=70){
+                alert("Nilai C");
+            } else {
+                alert("Masukkan nilai diantara 0 sampai 100");
+            }
+
+            nilai = confirm("Mau coba input lagi ?");
+        } 
+    </script>
+</body>
+</html>
