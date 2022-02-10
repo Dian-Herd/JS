@@ -2,7 +2,7 @@ function getData(url, tampilData){
     let xhr = new XMLHttpRequest();
 
     xhr.onloadstart = function(){
-        document.querySelector('.tbody').innerHTML = `<tr>Loading...</tr>`;
+        document.querySelector('.tbody').innerHTML = `<tr><td class="text-center" colspan="6">Loading...</td></tr>`;
     }
     xhr.onloadend = function() {
         if(xhr.status === 200){
